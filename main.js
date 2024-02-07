@@ -1,17 +1,17 @@
 
-//import * as THREE from 'three';
+import * as THREE from 'three';
 //import { CSS3DObject } from 'three/addons/renderers/CSS3DRenderer.js';
 import { CSS3DObject } from './src/CSS3DRenderer.js';
 import { MindARThree} from 'mindar-image-three';
 
 
-const THREE = window.MINDAR.IMAGE.THREE;
+//const THREE = window.MINDAR.IMAGE.THREE;
 
 document.addEventListener('DOMContentLoaded', () => {
   const start = async() => {
-    const mindarThree = new window.MINDAR.IMAGE.MindARThree({
+    const mindarThree = new MindARThree({
       container: document.body,
-      imageTargetSrc: './assets/targets.mind',
+      imageTargetSrc: './assets/targets2.mind',
     });
     const {renderer, cssRenderer, scene, cssScene, camera} = mindarThree;
 
@@ -26,3 +26,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   start();
 });
+
